@@ -1,0 +1,7 @@
+# ML stack (needed for real model inference/training; NOT needed for mining/API/tests)
+torch>=2.2
+transformers>=4.44
+peft>=0.11
+accelerate>=0.30
+# bitsandbytes is CUDA-only (Kaggle GPU); code imports it lazily when --quantize is used
+bitsandbytes>=0.43; platform_system != "Darwin"

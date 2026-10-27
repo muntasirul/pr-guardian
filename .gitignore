@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# Data (raw third-party data and mined artifacts are reproducible via scripts)
+data/repos/
+data/raw/
+data/processed/
+data/index/
+
+# Models / adapters
+models/
+*.adapter/
+reviews.db
+*.sqlite3
+
+# Kaggle / credentials
+kaggle.json
+
+notebooks/.ipynb_checkpoints/
